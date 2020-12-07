@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://maven.apache.org/POM/4.0.0"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.databricks.labs</groupId>
+    <artifactId>fire</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+
+    <organization>
+        <name>Suade</name>
+        <url>https://suade.org/fire//</url>
+    </organization>
+
+    <description>
+        This project is a simple fork of https://suade.org/fire/ in order to package all schemas as a
+        maven dependency to spark automated related workloads rather than external files and manual processes
+    </description>
+
+    <licenses>
+        <license>
+            <name>Apache License, version 2.0</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0</url>
+        </license>
+    </licenses>
+
+    <build>
+        <resources>
+            <resource>
+                <directory>v1-dev</directory>
+                <targetPath>v1-dev</targetPath>
+            </resource>
+        </resources>
+    </build>
+
+</project>
